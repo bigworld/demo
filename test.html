@@ -1,0 +1,104 @@
+<!DOCTYPE html> 
+<html> 
+<head>
+	<!--我是注释-->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <title>jQuery Mobile 1.2</title> 
+    <link rel="stylesheet"  href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" /> 
+    <script src="http://code.jquery.com/jquery-1.8.0.min.js"></script> 
+    <script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script> 
+</head> 
+<body> 
+    <div data-role="content"> 
+        <!-- your content goes here --> 
+		<a href="#simplepopup" data-rel="popup">Open Popup</a> 
+		<div data-role="popup" id="simplepopup"> 
+			<p>This is a completely basic popup, no options set.<p> 
+		</div>
+
+
+		<a href="#tooltip" data-rel="popup" data-role="button">Find out more</a> 
+		<div data-role="popup" id="tooltip" data-theme="e"> 
+			<p>You found out more!.</p> 
+		</div>
+
+		<a href="#menu" data-rel="popup" data-role="button">Menu</a> 
+		<div data-role="popup" id="menu" data-theme="a"> 
+			<ul data-role="listview" data-theme="c" data-inset="true"> 
+				<li data-role="divider" data-theme="a">My Menu</li> 
+				<li>Unlinked</li> 
+				<li><a href="methods.html">Linked</a></li> 
+				<li><a href="methods.html">With count</a><span class="ui-li-count">42</span></a></li> 
+			</ul> 
+		</div> 
+
+		<a href="#nestedmenu" data-rel="popup" data-role="button">Nested Menu</a> 
+		<div data-role="popup" id="nestedmenu" data-theme="none"> 
+			<div data-role="collapsible-set" data-theme="b" data-content-theme="c" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" style="margin:0; width:250px;"> 
+				<div data-role="collapsible" data-inset="false"> 
+					<h2>Colors</h2> 
+					<ul data-role="listview"> 
+						<li><a href="#">Red</a></li> 
+						<li><a href="#">Blue</a></li> 
+					</ul> 
+				</div> 
+				<div data-role="collapsible" data-inset="false"> 
+					<h2>Shapes</h2> 
+					<ul data-role="listview"> 
+						<li><a href="#">Circle</a></li> 
+						<li><a href="#">Square</a></li> 
+					</ul> 
+				</div> 
+			</div> 
+		</div> 
+
+
+		<a href="#login" data-rel="popup" data-position-to="window" data-role="button">Login</a> 
+		<div data-role="popup" id="login" data-theme="a"> 
+			<form style="padding:10px 20px;"> 
+				<h3>Please sign in</h3> 
+				<label for="un" class="ui-hidden-accessible">Username:</label> 
+				<input type="js" name="user" id="un" placeholder="username" /> 
+				<label for="pw" class="ui-hidden-accessible">Password:</label> 
+				<input type="password" name="pass" id="pw" placeholder="password" /> 
+				<button type="submit" data-theme="b">Sign in</button> 
+			</form> 
+		</div> 
+
+
+		<a href="#dialog" data-rel="popup" data-position-to="window" data-role="button" data-transition="pop">Dialog</a> 
+		<div data-role="popup" id="dialog" data-overlay-theme="a" data-theme="c"> 
+			<div data-role="header" data-theme="a"> 
+				<h1>Delete Page?</h1> 
+			</div> 
+			<div data-role="content" data-theme="d"> 
+				<h3>Are you sure you want to delete this page?</h3> 
+				<p>This action cannot be undone.</p> 
+				<a href="#" data-role="button" data-inline="true" data-rel="back" data-theme="c">No</a> 
+				<a href="#" data-role="button" data-inline="true" data-rel="back" data-theme="b">Yes, Delete it</a> 
+			</div> 
+		</div> 
+
+
+
+		<a href="#photo" data-rel="popup" data-position-to="window" data-role="button" data-transition="fade">Photo</a> 
+		<div data-role="popup" id="photo" data-overlay-theme="a" data-theme="d" data-corners="false"> 
+			<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="nojs" class="ui-btn-right">Close</a><img src="http://lorempixel.com/450/300/food/" /> 
+		</div> 
+
+
+		<div data-role="collapsible" data-theme="b" data-content-theme="c"> 
+			<h2>Favorite Spice Girl?</h2> 
+			<ul data-role="listview"> 
+				<li><a href="index.html">Posh</a></li> 
+				<li><a href="index.html">Scary</a></li> 
+				<li><a href="index.html">Sporty</a></li> 
+				<li><a href="index.html">Baby</a></li> 
+				<li><a href="index.html">Ginger</a></li> 
+			</ul> 
+		</div> 
+
+
+    </div> 
+</body> 
+</html> 
