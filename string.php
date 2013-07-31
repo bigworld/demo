@@ -1,4 +1,5 @@
 <?php
+//生成指定长度的随机字符串
 function random_string($length = 15, $incase = true){    
 	$pool = 'abcdefghijkmnpqrstuvwxyz';    
 	$pool .= '23456789';    
